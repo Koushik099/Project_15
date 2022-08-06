@@ -7,7 +7,7 @@
     <title>LandingPage-15</title>
     <link rel="stylesheet" href="style.css" />
 
-    <!-- AOS link -->
+    <!-- AOS link, scroll animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <script
@@ -41,7 +41,7 @@
           </div>
           <div class="hero-text" data-aos="slide-left">
             <h4>Hello I'm Arthur</h4>
-            <h1>Visual Designer</h1>
+            <h1>Visual <span class="autoType"></span></h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
               Morbi mollis augue eget mauris consectetur rutrum. Aliquam <br />
@@ -201,9 +201,20 @@
       </footer>
     </div>
 
-    <!-- AOS Data -->
-
-    <!-- Previous Version 😃 -->
+    <!-- CDN Link of typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".autoType", {
+        strings: ["Designer", "Developer"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true,
+        smartBackspace: true,
+        backDelay: 900,
+        startDelay: 1000,
+      });
+    </script>
+    <!-- AOS Data, Scroll animation -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
